@@ -1,0 +1,5 @@
+*.pyc
+snippets/
+*.vim
+.idea/
+soundcomments.db

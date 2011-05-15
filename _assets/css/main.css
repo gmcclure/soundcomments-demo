@@ -1,0 +1,13 @@
+header { font: 24px Arial; }
+section { margin: 60px auto; width: 600px; }
+article > header { color: #004276; font: bold 20px Arial; }
+article { margin: 30px 0; }
+article > p { color: #333; font: 14px/19px Arial; }
+h3 { color: #666; font: italic 11px Arial; }
+input, textarea { display: block; }
+input[type=submit] { display: inline; }
+span.comments { color: #999; cursor: pointer; font: italic 12px Arial; }
+div#comment_form { margin: 5px auto; width: 500px; }
+div.comment_list div.comment { background: #ebeffb; margin: 5px auto; padding: 4px; width: 500px; }
+div.comment_list div.comment li { list-style: none; }
+div.comment_list div.comment li:first-child { color: #666; font-size: 13px; font-style: italic; }

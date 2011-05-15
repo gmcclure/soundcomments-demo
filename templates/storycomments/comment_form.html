@@ -1,0 +1,49 @@
+{% load comments %}
+{% get_comment_form for story as form %}
+<form action="{% comment_form_target %}" method="post">
+    {% csrf_token %}
+    {% for hidden in form.hidden_fields %}
+    <div>
+        {{ hidden }}
+    </div>
+    {% endfor %}
+    <div>
+        <input id="id_block_id" type="hidden" name="block_id" value="{{ block_id }}" />
+    </div>
+    <div>
+        <input id="id_next" type="hidden" name="next" value="/" />
+    </div>
+
+    <p>
+        {{ field.errors }}
+        <label for="id_name">Name</label>:
+        <input id="id_name" type="text" maxlength="50" name="name" require="true">
+    </p>
+
+    <p>
+        {{ field.errors }}
+        <label for="id_email">Email address</label>:
+        <input id="id_email" type="text" name="email" validate="email">
+    </p>
+
+    <p>
+        {{ field.errors }}
+        <label for="id_url">URL</label>:
+        <input id="id_url" type="text" name="url">
+    </p>
+
+    <p>
+        {{ field.errors }}
+        <label for="id_comment">Comment</label>:
+        <textarea id="id_comment" name="comment" cols="40" rows="10" require="true"></textarea>
+    </p>
+
+    <p style="display:none">
+        <label for="id_honeypot">If you enter anything in this field your comment will be treated as spam</label> :
+        <input id="id_honeypot" type="text" name="honeypot">
+    </p>
+
+    <p>
+        <input type="submit" name="submit" class="submit-post" value="Submit">
+    </p>
+</form>
