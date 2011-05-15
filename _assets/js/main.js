@@ -39,8 +39,9 @@ $(document).ready(function(){
 
             if(block.parent().attr('id') != form.parent().parent().attr('id')){
                 $.get('/comment_form/1/' + block.parent().attr('id') + '/', function(data){
-                    block.append('<div id="comment_form">' + data + '</div>').parent().find('div.comment_list').slideDown();
-                    $('#comment_form').formly();
+                    block.append('<div id="comment_form">' + data + '</div>').parent().find('div.comment_list').slideDown('normal', function (){
+                        $('#comment_form').formly();
+                    });
                 });
             }
         });
