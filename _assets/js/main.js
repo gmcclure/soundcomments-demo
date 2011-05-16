@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.getJSON('/story_comments/1/', function(comments){
-        $('section$main article p').each(function(idx){
+        $('section#main article p').each(function(idx){
             var c = 0, comment_list = [];
             block = $(this);
 

@@ -1,4 +1,4 @@
-header { font: 24px Arial; }
+header { font: 24px Arial; margin-bottom: 10px; }
 section { margin: 60px auto; width: 600px; }
 article > header { color: #004276; font: bold 20px Arial; }
 article { margin: 30px 0; }
@@ -11,3 +11,4 @@ div#comment_form { margin: 5px auto; width: 500px; }
 div.comment_list div.comment { background: #ebeffb; margin: 5px auto; padding: 4px; width: 500px; }
 div.comment_list div.comment li { list-style: none; }
 div.comment_list div.comment li:first-child { color: #666; font-size: 13px; font-style: italic; }
+.ts-player { width: 580px; }
