@@ -11,4 +11,4 @@ div#comment_form { margin: 5px auto; width: 500px; }
 div.comment_list div.comment { background: #ebeffb; margin: 5px auto; padding: 4px; width: 500px; }
 div.comment_list div.comment li { list-style: none; }
 div.comment_list div.comment li:first-child { color: #666; font-size: 13px; font-style: italic; }
-.ts-player { width: 580px; }
+.ts-player { width: 600px; }

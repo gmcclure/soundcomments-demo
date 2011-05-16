@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     TimeSide.load(function(){
         provider = new TimeSide.SoundProvider();
-        player = new TimeSide.Player('#storyplayer', { image: '/_/js/timeside/ui/demo/waveform.png' });
+        player = new TimeSide.Player('#storyplayer', { image: '/_/sound/cemetery_nights_waveform2.png' });
         controller = new TimeSide.Controller({ player: player, soundProvider: provider });
 
         if(sound){
@@ -16,6 +16,7 @@ $(document).ready(function(){
 
     soundManager.url = '/_/js/timeside/ui/lib/';
     soundManager.flashVersion = '9';
+    soundManager.debugMode = false;
 
     soundManager.onload = function(){
         sound = soundManager.createSound({ 
